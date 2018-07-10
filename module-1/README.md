@@ -34,8 +34,6 @@ _I am something with four legs. You typically sit on me when you're tired of sta
 
 Hopefully a _chair_ came to mind!
 
-___
-
 ## What are Object Properties?
 
 Now what we just did was _describe_ what a _chair_ is. We said that a _chair_ has legs, could be made out of materials like wood and metal, could have arm rests, wheels, and could even allow whom ever is sitting in the _chair_ to spin!
@@ -47,8 +45,6 @@ _Properties_ are things that belong to the idea of a _chair_, but can be unique 
 For exmaple, some _chairs_ have three legs, are made out of plastics, have no wheels, and do not let whom ever is sitting them spin in circles.
 
 So we can think of a _chair_ as an _Object_ which has _properties_ that describe it.
-
-___
 
 ## Objects and Properties in JavaScript
 
