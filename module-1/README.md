@@ -19,6 +19,7 @@ This first module - _Let's Describe Our Dog with Code_ will attempt to help you 
     - [Let's Review](#lets-review)
     - [Time to Describe Our Dog](#time-to-describe-our-dog)
         - [What's null](#whats-null)
+    - [Variables](#variables)
 
 ## What is Syntax
 
@@ -334,3 +335,112 @@ So if your dog doesn't wear a collar (`wearsACollar: false`), how can your dog's
 But we can't leave the value empty, because JavaScript will give what's called a **syntax error** - Which means, we tried to write some code that wasn't _grammatically_ correct in JavaScript.
 
 So if your dog doesn't wear a collar, we must represent the _property_ `colorOfCollar` as `null`, because there is no color for a collar that doesn't exist!
+
+## Variables
+
+Awesome! We now have our dog described in code!
+
+```javascript
+{
+    name: 'Arabella',
+    gender: 'Female',
+    breed: 'German Shepard',
+    age: 4,
+    furColor: 'Chocolate Brown',
+    eyeColor: 'Nebula Blue',
+    wearsACollar: true,
+    colorOfCollar: 'Crimson',
+    favoriteTreat: 'Peanut Butter'
+}
+```
+
+But what if we just so happened to have described the same dog?
+
+How could we tell the difference between your dog and my dog if they look the same and are both named Arabella?
+
+```javascript
+// Your Dog, Arabella
+{
+    name: 'Arabella',
+    gender: 'Female',
+    breed: 'German Shepard',
+    age: 4,
+    furColor: 'Chocolate Brown',
+    eyeColor: 'Nebula Blue',
+    wearsACollar: true,
+    colorOfCollar: 'Crimson',
+    favoriteTreat: 'Peanut Butter'
+}
+
+// My dog, Arabella
+{
+    name: 'Arabella',
+    gender: 'Female',
+    breed: 'German Shepard',
+    age: 4,
+    furColor: 'Chocolate Brown',
+    eyeColor: 'Nebula Blue',
+    wearsACollar: true,
+    colorOfCollar: 'Crimson',
+    favoriteTreat: 'Peanut Butter'
+}
+```
+
+We could use comments, like I did above to tell the difference, but remember that JavaScript ignores comments, so to JavaScript they are still the same dogs.
+
+So what can we do?
+
+Well we could use what are called **variables** to tell our dogs apart!
+
+You can think of **variables** are _key value pairs_ that exist outside of an _object_.
+
+The syntax for **variables** are as follows:
+
+```javascript
+var key = 'value'; // var is short for variable
+```
+
+So we define **variables** using the `var` keyword, the name of our **variable** (A.K.A. the _key_), and the _key's value_.
+
+We can assign any of the types of values we've discussed so far to a **variable**:
+
+```javascript
+var myString = 'Hello there!';
+var myNumber = 42;
+var myBoolean = true;
+
+// We can even assign an Object to a Variable!
+var myObject = {};
+```
+
+So if we can assign any of those values to a **variable**, what if we just assigned each of our dogs to a variables, so even JavaScript could tell them apart?
+
+```javascript
+// Your Dog, Arabella
+var yourDog = {
+    name: 'Arabella',
+    gender: 'Female',
+    breed: 'German Shepard',
+    age: 4,
+    furColor: 'Chocolate Brown',
+    eyeColor: 'Nebula Blue',
+    wearsACollar: true,
+    colorOfCollar: 'Crimson',
+    favoriteTreat: 'Peanut Butter'
+}
+
+// My dog, Arabella
+var myDog = {
+    name: 'Arabella',
+    gender: 'Female',
+    breed: 'German Shepard',
+    age: 4,
+    furColor: 'Chocolate Brown',
+    eyeColor: 'Nebula Blue',
+    wearsACollar: true,
+    colorOfCollar: 'Crimson',
+    favoriteTreat: 'Peanut Butter'
+}
+```
+
+Now even though both of our dogs look and are even named the same, we and JavaScript can tell them apart, because your dog is assigned to the **variable** `yourDog` and mine is assigned `myDog`
